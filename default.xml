@@ -8,6 +8,9 @@
            fetch="https://github.com/IllusionRom"
            review="97.81.45.99:8080" />
            
+  <remote  name="git"
+           fetch="https://github.com" />
+           
   <default revision="refs/tags/android-4.4_r1"
            remote="aosp"
            sync-j="4" />
@@ -36,6 +39,8 @@
   <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
   <project path="device/common" name="device/common" />
+  <project path="device/samsung/aries-common" name="android_device_samsung_aries-common"  remote="ill" revision="cm-11.0"  />
+  <project path="device/samsung/galaxysmtd" name="android_device_samsung_galaxysmtd"  remote="ill" revision="cm-11.0"  />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
@@ -280,6 +285,7 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="git" revision="cm-11.0" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
@@ -297,6 +303,7 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
+  <project path="kernel/samsung/aries" name="CyanogenMod/android_kernel_samsung_aries" remote="git" revision="cm-11.0" />
   <project path="libcore" name="platform/libcore" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -434,5 +441,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="git" revision="cm-11.0" />
+
 
 </manifest>

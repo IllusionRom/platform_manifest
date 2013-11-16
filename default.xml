@@ -11,6 +11,23 @@
   <remote  name="git"
            fetch="https://github.com" />
            
+  <remote  name="gh"
+           fetch="https://github.com/"
+           sync-j="4" />
+           
+  <remote  name="cm"
+           fetch="git://github.com/" 
+           review="review.cyanogenmod.org" 
+           sync-j="4" />
+
+  <remote  name="cr"
+           fetch="git://github.com/"
+           review="review.carbon-rom.com"
+           sync-j="4" />
+
+  <remote  name="tm"
+           fetch="git://github.com/TheMuppets/" />
+           
   <default revision="refs/tags/android-4.4_r1"
            remote="aosp"
            sync-j="4" />
@@ -21,7 +38,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" />
+  <project path="art" name="CyanogenMod/android_art" remote="cm" revision="cm-11.0" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
@@ -52,9 +69,9 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
+  <project path="kernel/lge/hammerhead" name="CarbonDev/android_kernel_lge_hammerhead" /> remote="cr" revision="kk"
   <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
+  <project path="kernel/lge/mako" name="ParanoidAndroid/lge-kernel-mako" remote="gh" revision="jb43" /> -->
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -374,7 +391,7 @@
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
-  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
+  <project path="packages/wallpapers/PhaseBeam" name="CyanogenMod/android_packages_wallpapers_PhaseBeam" remote="cm" revision="cm-11.0" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" />

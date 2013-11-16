@@ -72,6 +72,7 @@
   <project path="kernel/lge/hammerhead" name="CarbonDev/android_kernel_lge_hammerhead" /> remote="cr" revision="kk"
   <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
   <project path="kernel/lge/mako" name="ParanoidAndroid/lge-kernel-mako" remote="gh" revision="jb43" /> -->
+  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />

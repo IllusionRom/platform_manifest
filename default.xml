@@ -69,7 +69,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
-  <project path="kernel/lge/hammerhead" name="CarbonDev/android_kernel_lge_hammerhead" /> remote="cr" revision="kk"
+  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
   <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
   <project path="kernel/lge/mako" name="ParanoidAndroid/lge-kernel-mako" remote="gh" revision="jb43" /> -->
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />

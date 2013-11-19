@@ -13,8 +13,6 @@ Submitting Patches to IllusionROM Gerrit
 First of all you will need to register, set up your SSH and username.
 Then you will only need to follow that steps:
 
-How to send commits to Illusion Gerrit.
-
 1. cd "folder"
 That second step must be done on every folder you want to commit to.
 2. scp -p -P 29418 <username>@97.81.45.99:hooks/commit-msg .git/hooks/
@@ -27,9 +25,8 @@ Now make your changes or cherry-picks. Be sure after editing files there is not 
 Creating Directories and Installing Repositories
 ------------------------------------------------
 
-You will need to set up some directories in your build environment.
+You will need to set up some directories in your build environment:
 
-To set up your build environment please run: 
 
     mkdir -p ~/bin
     mkdir -p ~/illusion
@@ -40,7 +37,7 @@ To set up your build environment please run:
     repo sync -jx(x=numbers of core, we would recommend to use 4)
 
 Building the System
----------------
+-------------------
 
 Initialize the environment running:
 

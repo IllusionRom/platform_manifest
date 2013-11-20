@@ -11,8 +11,8 @@
   <remote  name="gh"
            fetch="https://github.com/" />
 
-  <remote  name="github"
-           fetch="git://github.com/"
+  <remote  name="sr"
+           fetch="git://github.com/SlimRoms"
            review="https://review.slimroms.net:8443/"/>
            
   <remote  name="cm"
@@ -463,7 +463,7 @@
   <project path="vendor/illusion" name="android_vendor_illusion" remote="ill" revision="4.4" />
 
   <!-- Koush Superuser -->
-  <project path="external/koush/Superuser" name="SlimRoms/Superuser" remote="github" revision="kk4.4" />
-
+  <project path="external/koush/Superuser" name="Superuser" remote="sr" revision="kk4.4" />
+  <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-11.0" />
 
 </manifest>

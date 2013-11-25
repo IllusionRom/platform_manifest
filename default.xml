@@ -60,8 +60,8 @@
   <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
   <project path="device/common" name="device/common" />
-  <project path="device/samsung/aries-common" name="android_device_samsung_aries-common"  remote="ill" revision="cm-11.0"  />
-  <project path="device/samsung/galaxysmtd" name="android_device_samsung_galaxysmtd"  remote="ill" revision="cm-11.0"  />
+  <project path="device/samsung/aries-common" name="android_device_samsung_aries-common"  remote="ill" revision="4.4"  />
+  <project path="device/samsung/galaxysmtd" name="android_device_samsung_galaxysmtd"  remote="ill" revision="4.4"  />  
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />

@@ -73,8 +73,8 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" remote="aosp" revision="refs/tags/android-4.4_r1.2" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" remote="aosp" revision="refs/tags/android-4.4_r1.2" />
-  <project path="device/lge/mako" name="android_device_lge_mako" remote="omnirom" revision="android-4.4" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" remote="aosp" revision="refs/tags/android-4.4_r1.2" />  
+  <project path="device/lge/mako" name="android_device_lge_mako" remote="ill" revision="4.4" />
+  <project path="kernel/lge/AK" name="AK-Illusion" remote="ill" revision="4.4" />  
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -463,6 +463,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="vendor/illusion" name="android_vendor_illusion" remote="ill" revision="4.4" />
   <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="gh" revision="cm-11.0" />
+  <project path="vendor/lge" name="android_vendor_lge" remote="ill" revision="4.4" />
 
   <!-- Koush Superuser -->
   <project path="external/koush/Superuser" name="Superuser" remote="sr" revision="kk4.4" />

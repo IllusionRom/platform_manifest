@@ -32,13 +32,13 @@
   <remote  name="tm"
            fetch="git://github.com/TheMuppets/" />
            
-  <default revision="refs/tags/android-4.4_r1.2"
+  <default revision="refs/tags/android-4.4.1_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="manifest" name="platform_manifest" remote="ill" revision="4.4" />
+  <project path="manifest" name="platform_manifest" remote="ill" revision="4.4.1" />
 
-  <project path="build" name="android_build" remote="ill" revision="4.4" groups="pdk" >
+  <project path="build" name="android_build" remote="ill" revision="4.4.1" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -48,7 +48,7 @@
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
-  <project path="dalvik" name="platform_dalvik" remote="ill" revision="4.4" />
+  <project path="dalvik" name="platform_dalvik" remote="ill" revision="4.4.1" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
@@ -71,10 +71,9 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" remote="aosp" revision="refs/tags/android-4.4_r1.2" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" remote="aosp" revision="refs/tags/android-4.4_r1.2" />
+  <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" remote="aosp" revision="refs/tags/android-4.4.1_r1" />
+  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" remote="aosp" revision="refs/tags/android-4.4.1_r1" />
   <project path="device/lge/mako" name="android_device_lge_mako" remote="ill" revision="4.4" />
-  <project path="kernel/lge/AK" name="AK-Illusion" remote="ill" revision="4.4" />  
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -271,8 +270,8 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-4.4" />  
-  <project path="frameworks/base" name="android_frameworks_base" revision="4.4" remote="ill" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="ill" revision="4.4.1" />  
+  <project path="frameworks/base" name="android_frameworks_base" remote="ill" revision="4.4.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -291,7 +290,7 @@
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ill" revision="4.4" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ill" revision="4.4.1" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" />
@@ -327,9 +326,10 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
+  <project path="kernel/asus/datflo" name="aznrice/kernel_msm" remote="gh" revision="kk-mr1" />
+  <project path="kernel/lge/AK" name="AK-Illusion" remote="ill" revision="4.4" />
   <project path="kernel/samsung/aries" name="android_kernel_samsung_aries" remote="cm" revision="cm-11.0" />
-  <project path="kernel/asus/datflo" name="aznrice/kernel_msm" remote="gh" revision="aosp-kk" />
-  <project path="libcore" name="platform/libcore" />
+  <project path="libcore" name="android_libcore" remote="ill" revision="4.4.1" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
@@ -366,7 +366,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ill" revision="4.4" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ill" revision="4.4.1" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -391,7 +391,7 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ill" revision="4.4" />  
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ill" revision="4.4.1" />  
   <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" remote="cm" revision="cm-11.0" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
@@ -443,7 +443,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="android_system_core" remote="omnirom" revision="android-4.4" />  
+  <project path="system/core" name="platform_system_core" remote="ill" revision="4.4.1" />  
   <project path="system/extras" name="CyanogenMod/android_system_extras" remote="gh" revision="cm-11.0" />   
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />

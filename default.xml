@@ -38,7 +38,7 @@
 
   <project path="manifest" name="platform_manifest" remote="ill" revision="4.4.1" />
 
-  <project path="build" name="android_build" remote="ill" revision="4.4.1" groups="pdk" >
+  <project path="build" name="android_build" remote="ill" revision="4.4.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
